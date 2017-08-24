@@ -46,7 +46,7 @@ REM ATTEMPTING .H264 ENCODING
 for %%i in (.\processed_video\*.mp4) do .\ffmpeg\bin\ffmpeg -i %%i -movflags faststart -acodec copy -vcodec .\processed_video\%%i
 REM for %i in (.\processed_video\*.mp4) do .\ffmpeg\bin\ffmpeg -i %i -movflags faststart -acodec copy -vcodec copy .\processed_video\compressed\%i
 for %%i in (.\processed_video\*.mp4) do .\ffmpeg\bin\ffmpeg -i %%i -c:v libx264 -preset slow -s 1024x576 -an -b:v 370K homepage.mp4
-for %i in (\processed_video\*.mp4) do .\ffmpeg\bin\ffmpeg -i %i -c:v libx264 -preset slow -s 1024x576 -an -b:v 370K \processed_video\compressed\%i
+for %i in (\processed_video\*.mp4) do .\ffmpeg\bin\ffmpeg -i %i -c:v libx264 -preset slow -s 1024x576 -an -b:v 370K \processed_video\%i-compressed
 
 REM for %i in (*.mp4) do @echo file '%i' >> mylist.txt && .\ffmpeg\bin\ffmpeg -f concat -safe 0 -i mylist.txt -c copy .\processed_video\%i
 

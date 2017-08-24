@@ -1,0 +1,38 @@
+DropFolders 1.1.63
+
+
+-----------------------------------
+
+
+BEGIN ENCODE[17:15:54] hb_init: checking cpu count
+[17:15:54] hb_init: starting libhb thread
+HandBrake 0.9.4 (2009112300) - MinGW i386 - http://handbrake.fr
+1 CPU detected
+Opening C:\Users\PheedoBooth\selfiebooth\unprocessed_video\VideoQueue\1503533749843_compress.bat...
+[17:15:54] hb_scan: path=C:\Users\PheedoBooth\selfiebooth\unprocessed_video\VideoQueue\1503533749843_compress.bat, title_index=1
+[17:15:54] scan: trying to open with libdvdread
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Encrypted DVD support unavailable.
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[17:15:54] dvd: not a dvd - trying as a stream/file instead
+[17:15:54] hb_stream_open: open C:\Users\PheedoBooth\selfiebooth\unprocessed_video\VideoQueue\1503533749843_compress.bat failed
+[17:15:54] scan: unrecognized file type
+[17:15:54] libhb: scan thread found 0 valid title(s)
+No title found.
+HandBrake has exited.
+
+END ENCODE
+
+
+-----------------------------------
+
+INPUT: C:\Users\PheedoBooth\selfiebooth\unprocessed_video\VideoQueue\1503533749843_compress.bat
+
+OUTPUT: C:\Users\PheedoBooth\selfiebooth\unprocessed_video\processed_video\compress.mp4
+
+ARGUMENTS: -f mp4 -O -w 512 -e x264 -b 1000 -a 1 -E faac -6 stereo -R 44.1 -B 128 -D 0.0 -x ref=2:bframes=3:subq=6:mixed-refs=0:8x8dct=0:trellis=0:weightb=0:no-fast-pskip=1 -v 1
+
+EXIT CODE: 0

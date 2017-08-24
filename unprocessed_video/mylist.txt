@@ -1,2 +1,0 @@
-file 'C:\Users\Nicholas\Desktop\360\intro_video\intro.mp4' 
-file 'fuck.mp4'  
